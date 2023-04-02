@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <title>My University</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+  <body>
+    <div class="page-bg">
+      <div class="page-wrapper">
+        <header class="header">
+          <h2 class="header-title">My University</h2>
+        </header>
+        <main class="main">
+          <div class="side"></div>
+
+          <article class="page-container">
+            <h1 class="page-title">Регистрация группы</h1>
+            <form id="create_group_form" method="post">
+
+              <div class="form-field">
+                <label class="form-field__label" for="group_number">Номер группы</label>
+                <input
+                  id="group_number"
+                  name="group-number"
+                  type="text"
+                  placeholder="Номер группы"
+                  minlength="5"
+                  maxlength="8"
+                  required/>
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="group_cource">Курс</label>
+                <select id="group_cource" name="group-cource" required>
+                  <option value="1" selected>1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="group_faculty">Факультет</label>
+                <select id="group_faculty" name="group-faculty" required>
+                  <option value="ФКП" selected>Факультет компьютерного проектирования (ФКП)</option>
+                  <option value="ФИТУ">Факультет информационных технологий и управления (ФИТУ)</option>
+                  <option value="ФРЭ">Факультет радиотехники и электроники (ФРЭ)</option>
+                  <option value="ФКСиС">Факультет компьютерных систем и сетей (ФКСиС)</option>
+                  <option value="ФИК">Факультет инфокоммуникаций (ФИК)</option>
+                  <option value="ИЭФ">Инженерно-экономический факультет (ИЭФ)</option>
+                  <option value="ВФ">Военный факультет (ВФ)</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="student_count">Количество студентов</label>
+                <input id="student_count" name="student-count" type="number" max="45" placeholder="Количество студентов" required/>
+              </div>
+
+              <div class="form-field">
+                <label class="form-field__label" for="group_email">Email группы</label>
+                <input id="group_email" name="group-email" type="email" placeholder="Email группы" required/>
+              </div>
+
+              <div id="additional-fields-container"></div>
+
+              <div class="page-actions">
+                <div>
+                  <a class="c-button first" href="./results.html">Показать результат</a>
+                </div>
+                <div>
+                  <button class="c-button outline" type="reset">Очистить</button>
+                  <button id="additional-fields-action" class="c-button" type="button">Добавить поле</button>
+                  <button class="c-button" type="submit">Сохранить</button>
+                </div>
+              </div>
+
+            </form>
+
+            <hr>
+
+            <form id="delete_group_form" method="delete">
+              <div class="form-field">
+                <select id="group_id_for_delete" name="group-id-for-delete" required>
+                </select>
+
+                <div class="page-actions">
+                  <br>
+                  <div>
+                    <button class="c-button danger" type="submit">Удалить</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </article>
+
+          <div class="side"></div>
+        </main>
+        <footer class="footer">
+          <span class="footer-text">© 2022 My University.</span>
+        </footer>
+      </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>

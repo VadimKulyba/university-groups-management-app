@@ -1,0 +1,166 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.page-bg {
+  height: 100vh;
+  width: 100%;
+  background: center center url("../resource/bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: calc(100vh - 60px);
+  border-radius: 15px;
+  box-shadow: 0 4px 14px 18px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.header {
+  background: rgba(57, 85, 57, 0.95);
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  color: beige;
+  margin: 0;
+  line-height: 80px;
+  font-weight: 600;
+}
+
+.side {
+  width: 240px;
+  background: rgba(154, 205, 50, 0.2);
+  padding: 20px;
+}
+
+.footer {
+  background: rgba(57, 85, 57, 0.95);
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-text {
+  color: beige;
+  line-height: 40px;
+}
+
+.main {
+  height: calc(100vh - 210px);
+  display: flex;
+}
+
+.page-container {
+  width: calc(100vw - 240px);
+  color: beige;
+  background: rgba(97, 163, 98, 0.65);
+  padding: 20px;
+}
+
+.page-title {
+  margin: 0 0 20px;
+  font-size: 1.8rem;
+}
+
+.page-actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-actions .c-button:not(:last-child) {
+  margin-right: 10px;
+}
+
+#additional-fields-container {
+  margin-bottom: 20px;
+}
+
+.form-field {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.form-field__label {
+  display: inline-block;
+  min-width: 150px;
+}
+
+.form-field input:not(input[type="radio"]):not(input[type="checkbox"]),
+.form-field textarea, .form-field select {
+  padding: 5px 10px;
+  border: 1px solid #57ff98;
+  width: 100%;
+  max-width: 300px;
+}
+
+.c-button {
+  padding: 10px;
+  border: 1px solid #57ff98;
+  background: rgb(43, 84, 44);
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.c-button.outline {
+  background: #fff;
+  color: rgb(43, 84, 44);
+}
+
+.c-button.danger {
+  border: 1px solid rgb(84, 14, 6);
+  background: #ff3635;
+  border-radius: 6px;
+  color: #fff;
+}
+
+.c-button:hover {
+  opacity: 0.7;
+}
+
+.result-table {
+  width: 100%;
+}
+
+.result-table th, .result-table td {
+  padding: 5px 10px;
+  background-color: #23544a;
+  color: #fff;
+}
+
+.result-table th {
+  white-space: nowrap;
+}
+
+.result-table tr:nth-child(2n) td {
+  background-color: rgb(43, 84, 44);
+}
+
+.table-wrapper {
+  overflow-y: auto;
+  max-height: calc(100vh - 400px);
+  margin-bottom: 20px;
+}
